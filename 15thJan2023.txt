@@ -1,0 +1,91 @@
+1.useEffect(() => {}) -> without dependency array useEffect is called after each render,
+as its not dependent on anything.
+
+2.Never create a component inside a component - Why?
+->Because everytime the outer component is rendered inner component is created
+
+3.Never create state inside if else - Why?
+->Might create inconsistency; React likes to keep things straight forward in this case,
+it wants to know what all are the states at any point in time 
+
+4.Never create state inside for loop - Why?
+->for every ith values its not feasible to create states,
+because states are created to track state of component, 
+having it in one var is only correct
+
+5.Never use state outside functional component
+->Because states are are created for the very purpose to be tracked and maintained inside the component,
+for tracking the state of that component
+
+6.Can I use more than one useEffect - Yes
+
+7.Why cdn is a greate place to store images?
+->
+
+8.Images are already optimized when we put it on to cdn
+as we cant optimize it once it comes to browser
+
+9.Shimmer created with help of : 
+Array(10).fill("").map((e) => {<div className="shimmer-card"></div>}) - quick way to create shimmer
+Note: No need for packages(react-shimmer) for small things that can be done with min effort for many reasons
+You can use packages for bigger tasks which involves lots of things like forms - formik
+
+10.React router packages for routing - using latest version i.e version 6
+
+11.We need to create routing configuration inorder for router to work
+
+12.createBrowserRouter is what we use to specify what to load for which path(creating routes)
+
+13.RouterProvider is a component that is used to provide the routes defined to our components
+
+14.errorElement to show error on page for wrong paths
+
+15.useRouteError - Hook used to get error info
+
+16.SPA - Single Page Application - Single Page is loaded once, only content is changed on that same page.
+
+17.<a> tag reloads the page which is opposite to SPA
+
+18.Client side routing: app doesnt load, doesnt make network call to get other pages
+Server side routing: all pages come from server
+
+19.Since <a></a> results in page reload, we use <Link></Link>,
+but behind the scene <Link></Link> uses <a></a>
+
+20.<Outlet/> - fills whichever children component needs to be loaded depending on route
+
+21.Dynamic Routing:
+
+22.useParams : hook to read params from url
+
+23.Build Login page with hardcoded values on clicking to login it should take to home page(use formik)
+
+24.sequence does not matter inside route configuration
+
+25.modular, maintainable, testable, reusable, readable
+
+26.Pending : fix No restaurant matched your filter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
